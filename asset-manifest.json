@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/basic-stepper-form/static/css/main.082d727b.css",
+    "main.js": "/basic-stepper-form/static/js/main.d13276e3.js",
+    "static/js/787.bd57dbaa.chunk.js": "/basic-stepper-form/static/js/787.bd57dbaa.chunk.js",
+    "static/media/logo.svg": "/basic-stepper-form/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/basic-stepper-form/index.html",
+    "main.082d727b.css.map": "/basic-stepper-form/static/css/main.082d727b.css.map",
+    "main.d13276e3.js.map": "/basic-stepper-form/static/js/main.d13276e3.js.map",
+    "787.bd57dbaa.chunk.js.map": "/basic-stepper-form/static/js/787.bd57dbaa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.082d727b.css",
+    "static/js/main.d13276e3.js"
+  ]
+}
