@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import BasicStepperForm from "./BasicStepperForm";
 
 function App() {
+  const theme = createTheme({
+    palette: {
+      // primary: { main: "#3f9c35" },
+      // secondary: { main: "#0075b0" },
+      // info: { main: "#dbe8f3", contrastText: "#0075b0", dark: "#a1c5e0" },
+      // warning: { main: "#002244", contrastText: "#fff", dark: "#005c84" },
+      primary: { main: "#016A70" },
+      secondary: { main: "#C70039" },
+      info: { main: "#dbe8f3", contrastText: "#0075b0", dark: "#a1c5e0" },
+      warning: { main: "#002244", contrastText: "#fff", dark: "#005c84" },
+    },
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <BasicStepperForm />
+    </ThemeProvider>
   );
 }
 

@@ -1,13 +1,108 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --primary-green: #016a70;
+  --primary-blue: #c70039;
+  --secondary-process-cyan: #b0d9b1;
+  --blue-289: #002244;
+  --grey-1: #e6e7e8;
+  --grey-2: #bcbec0;
+  --grey-3: #939598;
+  --grey-4: #6d6e71;
+  --page-margin-x: 2rem;
+  --page-margin-y: 1rem;
+  --main-margin-y: 1rem;
+  --form-heading-height: 3rem;
+  --document-nav-height: 45px;
+  --document-nav-padding: 1rem;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* height: 100vh;
+  overflow: hidden; */
+}
+
+p {
+  padding: 0rem;
+  margin: 0rem;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Split screen resizer */
+
+.Resizer {
+  background: var(--grey-1);
+  opacity: 0.2;
+  z-index: 1;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+.Resizer:hover {
+  transition: all 2s ease;
+}
+
+.Resizer.vertical {
+  width: 11px;
+  margin: 0 -5px;
+  border-left: 5px solid var(--grey-4);
+  border-right: 5px solid var(--grey-4);
+  cursor: col-resize;
+}
+
+.Resizer.vertical:hover {
+  border-left: 5px solid rgba(0, 0, 0, 0.5);
+  border-right: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+
+.Resizer.disabled:hover {
+  border-color: transparent;
+}
+
+.css-18qnf17-MuiDataGrid-root {
+  border-radius: 8px !important;
+}
+
+.css-1dpme3d-MuiDataGrid-root .MuiDataGrid-withBorderColor {
+  border-radius: 8px !important;
+}
+
+.css-233n5t-MuiDataGrid-root::-webkit-scrollbar {
+  width: 2px !important;
+}
+
+.MuiBox-root.css-6i82yu img {
+  width: 100%;
+}
+
+/* Custom Scroll bar */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--primary-blue);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+  border-radius: 12px;
+}
+
+/* Font setup */

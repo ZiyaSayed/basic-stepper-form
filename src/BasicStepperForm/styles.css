@@ -1,0 +1,92 @@
+.main-container {
+  display: flex;
+  position: relative;
+}
+
+.main-container .sidebar {
+  margin: var(--main-margin-y) var(--page-margin-x);
+  margin-top: calc(var(--form-heading-height) + var(--main-margin-y));
+}
+
+.sidebar {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 320px;
+}
+
+.form-step {
+  font-weight: 500 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-step-active svg {
+  width: 1rem;
+}
+
+.form-step-active {
+  color: var(--primary-blue);
+}
+
+.form-step-completed {
+  color: var(--primary-green);
+}
+
+.form-step-completed svg {
+  width: 1rem;
+}
+
+.form-step-pending svg {
+  width: 0.5rem;
+}
+
+.form-step-pending {
+  color: var(--grey-4);
+}
+
+.main-content {
+  width: 100%;
+  height: calc(100vh - 90px);
+  overflow-y: scroll;
+}
+
+.form-heading {
+  height: var(--form-heading-height);
+  font-size: 1.8rem;
+  color: var(--blue-289);
+}
+
+.form-component {
+  margin: var(--main-margin-y) 0rem;
+  width: 70%;
+}
+
+.nav-buttons {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-buttons button {
+  border: 0;
+  outline: 0;
+  padding: 0.3rem 1rem;
+  background-color: transparent;
+}
+
+.nav-back {
+  color: var(--grey-4);
+}
+
+.nav-next {
+  color: white;
+  background-color: var(--primary-blue) !important;
+  border-radius: 16px;
+  padding: 0.3rem 2rem !important;
+}

@@ -1,0 +1,7 @@
+.gray-background {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border-radius: 2px;
+}
